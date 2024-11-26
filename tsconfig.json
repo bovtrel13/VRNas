@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Указывает целевую версию JavaScript
+    "module": "ESNext", // Указывает модульную систему
+    "moduleResolution": "node", // Способ разрешения модулей
+    "strict": true, // Включает строгую проверку типов
+    "jsx": "preserve", // Сохраняет JSX без преобразования
+    "esModuleInterop": true, // Включает совместимость с CommonJS
+    "skipLibCheck": true, // Пропускает проверку типов в файлах библиотек
+    "forceConsistentCasingInFileNames": true, // Обеспечивает единообразие регистров в именах файлов
+    "baseUrl": ".", // Базовый URL для разрешения модулей
+    "paths": {
+      "@/*": ["src/*"] // Настройка псевдонимов для путей
+    }
+  },
+  "include": [ "src/**/*.ts","src/**/*.vue", "src/components/test.js"], // Указывает файлы для компиляции
+  "exclude": ["node_modules"] // Исключает папку node_modules из компиляции
+}

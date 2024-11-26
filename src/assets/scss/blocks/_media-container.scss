@@ -1,0 +1,199 @@
+.media-container {
+  display: flex;
+  justify-content: end;
+  max-width: 528px;
+  width: 100%;
+  height: 622px;
+  width: 100%;
+  padding-left: 23px;
+  position: relative;
+
+  @include _1199 {
+    max-width: 410px;
+    height: 467px;
+  }
+
+  @include _991 {
+    max-width: 621px;
+    height: 722px;
+  }
+
+  @include _639 {
+    max-width: 389px;
+    height: 447px;
+  }
+
+  @include _430 {
+    padding-left: 17px;
+    max-width: 100%;
+    height: 467px;
+  }
+
+  @include _380 {
+    padding-left: 0;
+    height: 110vw;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 399px;
+    height: 496px;
+    background-color: $black_50;
+
+    @include _1199 {
+      width: 300px;
+      height: 373px;
+    }
+
+    @include _991 {
+      width: 489px;
+      height: 586px;
+    }
+
+    @include _639 {
+      width: 300px;
+      height: 373px;
+    }
+
+    @include _380 {
+      width: 70vw;
+      height: min(373px, 110vw);
+    }
+  }
+
+  &--before-right {
+    padding-left: 0;
+    &::before {
+      left: initial;
+      right: -3%;
+    }
+  }
+
+  &--size2 {
+    max-width: 530px;
+    height: 622px;
+    padding-left: 0;
+
+    @include _1199 {
+      max-width: 420px;
+      height: 497px;
+    }
+
+    @include _991 {
+      max-width: 630px;
+      height: 735px;
+    }
+
+    @include _639 {
+      max-width: 420px;
+      height: 500px;
+    }
+
+    @include _430 {
+      max-width: 100%;
+      height: 447px;
+    }
+
+    @include _380 {
+      padding-left: 0;
+      height: 125vw;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 15%;
+      bottom: 0;
+      z-index: -1;
+      width: 399px;
+      height: 496px;
+      background-color: $black_50;
+
+      @include _1199 {
+        width: 300px;
+        height: 373px;
+      }
+
+      @include _991 {
+        width: 489px;
+        height: 586px;
+      }
+
+      @include _639 {
+        width: 300px;
+        height: 373px;
+      }
+
+      @include _380 {
+        width: 70vw;
+        height: min(373px, 110vw);
+      }
+    }
+  }
+
+
+  &--size3 {
+    max-width: 500px;
+    height: 574px;
+    @include _1199 {
+      max-width: 460px;
+      height: 530px;
+    }
+
+    @include _991 {
+      max-width: 648px;
+      height: 737px;
+    }
+
+    @include _639 {
+      max-width: 470px;
+      height: 540px;
+    }
+
+    @include _430 {
+      max-width: 100%;
+      height: 447px;
+    }
+
+    @include _380 {
+      padding-left: 0;
+      height: 125vw;
+    }
+  }
+
+  &__img {
+    position: relative;
+  
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      @include background-effect;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  &__video {
+    max-width: 196px;
+    width: 100%;
+    height: 127px;
+    position: absolute;
+    bottom: -22px;
+  }
+
+  &__video--left {
+    left: -54px;
+
+    @include _430 {
+      left: 0;
+    }
+  }
+}

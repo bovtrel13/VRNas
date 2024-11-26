@@ -1,0 +1,36 @@
+// Main Colors
+$main-gradient: linear-gradient(to right, #0cbaf1, #e95ce9);
+$purple_10: #ca6aeb;
+$blue: #19b5f1;
+
+// Alerts
+$success: #00c566;
+$error: #ff4747;
+$warning: #facc15;
+
+// Grey scale
+$black_100: #18181b;
+
+$black_50: #252532;
+$grey_1: #b0b0b2;
+$grey_2: #d1d1d1;
+$white: #ffffff;
+
+// Golden
+
+$gold_1: #f0ce91;
+
+// border-image
+$border1: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  )
+  1;
+
+//  glow
+$glow-effect: 0 0 10px rgb(145, 175, 240), 0 0 20px rgba(145, 240, 224, 0.8);
+$glow-effect2: 0 0 10px 10px rgb(227, 240, 145),
+  0 0 20px 20px rgba(240, 145, 145, 0.8);
+
+$button_v3: #ffffff0f;

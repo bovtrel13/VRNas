@@ -1,0 +1,35 @@
+@mixin hover-and-pointer {
+  @media (any-hover: hover) and (any-pointer: fine) {
+    @content;
+  }
+}
+
+@mixin hover-none {
+  @media (hover: none) {
+    @content;
+  }
+}
+
+@mixin center-absolute($top: 50%, $left: 50%) {
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
+
+@mixin background-effect(
+  $width: 364.62px,
+  $height: 608.06px,
+  $rotate: -99deg,
+  $blur: 67px
+) {
+  width: $width;
+  height: $height;
+  transform: rotate($rotate);
+  background: linear-gradient(
+    135.32deg,
+    rgba(28, 196, 249, 0.5) 4.048%,
+    rgba(254, 105, 254, 0.5) 94.424%
+  ) no-repeat;
+  filter: blur($blur);
+  border-radius: 100px;
+}

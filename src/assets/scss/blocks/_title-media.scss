@@ -1,0 +1,36 @@
+
+.title-media {
+display: flex;
+flex-direction: column;
+gap: 12px
+}
+
+// Если дочерним элементом .title-media__title является компонент BaseGradientTitle, то для выравнивания по центру используем на .title-media__title класс миксин со св-ом display: flex;
+// justify-content: center; ,тк BaseGradientTitle имеет ширину max-content и св-во text-align: center не будет работать . Или можно использовать display: grid; justify-items: center; на  .title-media через миксин 
+.title-media__title {
+  // margin-bottom: 12px;
+  @include caption1;
+  letter-spacing: 0.14em;
+  @include _380 {
+    font-size: 4vw; 
+  }
+}
+
+.title-media__sub-title {
+  @include heading2; 
+  color: $white; 
+  letter-spacing: -0.005em; 
+  
+
+  @include _1199 {
+    @include heading3; 
+  }
+
+  @include _480 {
+    @include heading5; 
+  }
+
+  @include _380 {
+    font-size: 9vw; 
+  }
+}

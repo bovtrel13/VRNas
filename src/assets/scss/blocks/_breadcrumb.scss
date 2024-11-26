@@ -1,0 +1,37 @@
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: $white;
+  &--left {
+    justify-content: start;
+  }
+  &__item {
+    position: relative;
+    @include heading11;
+
+    &:not(:last-child):before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -22px;
+      width: 18px;
+      height: 18px;
+
+      background: url('/assets/images/decor/toggle_btn.svg') no-repeat
+        center/100%;
+      transform: rotate(-90deg) translateX(50%);
+    }
+    
+    &--active {
+      @include body3;
+      color: $grey_2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
