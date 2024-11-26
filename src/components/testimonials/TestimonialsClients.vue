@@ -27,7 +27,6 @@ import ClientTestimonials from '@/components/testimonials/ClientTestimonials.vue
 import clientsData from '@/assets/data/people/clients';
 import { ref } from 'vue';
 
-
 const props = defineProps({
   clientsData: {
     type: Array,

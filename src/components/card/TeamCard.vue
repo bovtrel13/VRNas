@@ -41,9 +41,9 @@ const props = defineProps({
     required: false,
   },
 });
-
+const basePath = `${import.meta.env.BASE_URL}`;
 const getImagePath = (name, format = '') => {
-  return `/assets/images/team/${name}${format}`;
+  return `${basePath}assets/images/team/${name}${format}`;
 };
 </script>
 

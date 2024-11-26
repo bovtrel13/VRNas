@@ -5,6 +5,7 @@ import { useRoute } from 'vue-router';
 // Данные
 import dataDetailService from '@/assets/data/our_service/detailService';
 import dataServiceList from '@/assets/data/our_service/serviceList';
+
 import imgBgTabService from '/assets/images/bg/line-circle-bg.svg';
 import imgNavigationTab from '/assets/images/decor/icons8-стрелка-40.png';
 import imgDecorHeroService from '/assets/images/bg/stars_min.png';
@@ -22,7 +23,7 @@ const detailServiceData = markRaw(dataDetailService);
 
 // пропсы для TabServices и HeroServices,  page detail service
 
-const basePath = '/our-services';
+const link = '/our-services';
 
 // параметр пути
 const serviceId = computed(() => route.params.serviceId);
@@ -78,7 +79,7 @@ const linkBtn = markRaw({
 // пропсы HomeBigPlayer, page detail service =================================================================
 
 const playerBigHome = computed(() => {
-  const pathImg = `/assets/images/bg/${
+  const pathImg = `assets/images/bg/${
     detailServiceData[selectService.value].imgName
   }`;
 
@@ -111,7 +112,7 @@ const imageOurPricing = markRaw({
   alt: 'image user',
   objFit: 'cover',
 });
-const listImgPathOurPricing = '/assets/images/decor/decor-list-service.svg';
+const listImgPathOurPricing = 'assets/images/decor/decor-list-service.svg';
 const textContentOurPricing = markRaw({
   tag_title: 'h2',
   title: 'our pricing',
@@ -140,7 +141,7 @@ const linkBtnBigPlayer = markRaw({
     >
       <TabServices
         @switching="handleSwitchTabs"
-        :basePath
+        :link
         :bgImage="imgBgTabService"
         :arrTextTabs
         :imgNavigationTab

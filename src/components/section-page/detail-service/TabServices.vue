@@ -3,7 +3,7 @@ import { ref, reactive, computed } from 'vue';
 import { useRouter } from 'vue-router';
 
 const props = defineProps({
-  basePath: {
+  link: {
     type: String,
     required: true,
   },
@@ -66,7 +66,7 @@ const selectPage = (id, index) => {
 
   emit('switching', selectItem.value, activeBtnIndex.value);
 
-  router.replace(`${props.basePath}/${id}`);
+  router.replace(`${props.link}/${id}`);
 };
 
 const handleNextBtn = () => {
@@ -77,7 +77,7 @@ const handleNextBtn = () => {
   selectItem.value = idService;
 
   emit('switching', selectItem.value, activeBtnIndex.value);
-  router.push(`/our-services/${selectItem.value}`);
+  router.push(`${props.link}/${selectItem.value}`);
 };
 
 const handlePrevBtn = () => {
@@ -89,7 +89,7 @@ const handlePrevBtn = () => {
   selectItem.value = idService;
 
   emit('switching', selectItem.value, activeBtnIndex.value);
-  router.push(`/our-services/${selectItem.value}`);
+  router.push(`${props.link}/${selectItem.value}`);
 };
 </script>
 <template>

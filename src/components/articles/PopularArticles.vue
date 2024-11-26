@@ -36,7 +36,7 @@
                 :to="'/blog/' + card.id"
               >
                 <img
-                  src="/assets/images/decor/next.svg"
+                  :src="`${basePath}assets/images/decor/next.svg`"
                   alt="link"
                 />
               </router-link>
@@ -77,6 +77,7 @@ const props = defineProps({
     default: false,
   },
 });
+const basePath = `${import.meta.env.BASE_URL}`;
 
 const media = {
   1: window.matchMedia('(min-width: 1px)'),
@@ -106,7 +107,7 @@ const redirectToBlog = (cardId) => {
 
 
 const getImage = (index) => {
-  return `/assets/images/article/popular_article/${props.dataSlider[index].imgName}`;
+  return `${basePath}assets/images/article/popular_article/${props.dataSlider[index].imgName}`;
 };
 
 // Функция для запуска слайдера

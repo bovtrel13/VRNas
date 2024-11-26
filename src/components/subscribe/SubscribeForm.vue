@@ -20,7 +20,7 @@
         >
           <img
             class="subscribe__btn-img"
-            src="/assets/images/decor/Send.svg"
+            :src="`${basePath}assets/images/decor/Send.svg`"
             alt="send"
           />
         </button>
@@ -29,7 +29,13 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const basePath = `${import.meta.env.BASE_URL}`;
+
+
+
+
+</script>
 
 <style lang="scss" scoped>
 .subscribe {

@@ -73,7 +73,7 @@ function onSeeking() {
 
 const playerStyle = computed(() => {
   return {
-    '--img': `url(${props.img})`,
+    '--img': `url(${import.meta.env.BASE_URL}${props.img})`,
   };
 });
 
@@ -88,7 +88,7 @@ watch(
 
 
 const videoSrc = computed(() => {
-  return `/assets/video/${props.video}`; 
+  return `${import.meta.env.BASE_URL}/assets/video/${props.video}`; 
 });
 </script>
 

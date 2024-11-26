@@ -10,7 +10,7 @@
     <button class="drop-menu__btn">
       <img
         :class="{ 'btn-rotate': !hiddenMenu }"
-        src="/assets/images/decor/toggle_btn.svg"
+        :src="`${basePath}assets/images/decor/toggle_btn.svg`"
         alt="button"
       />
     </button>
@@ -35,6 +35,9 @@
 </template>
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const basePath: string = import.meta.env.BASE_URL;
+
 
 // Интерфейс для атрибутов элемента меню
 interface MenuItemAttr {

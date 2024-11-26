@@ -29,10 +29,11 @@ const props = defineProps({
     default: '0px'
   }
 });
+const basePath = `${import.meta.env.BASE_URL}`;
 
 const pathImg = computed(() => {
   return props.imgName
-    ? `/assets/images/decor/${props.imgName}`
+    ? `${basePath}assets/images/decor/${props.imgName}`
     : null;
 });
 

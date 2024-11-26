@@ -52,12 +52,12 @@ const props = defineProps({
 const setObjFit = computed(() => {
   return { '--obj-fit': props.objFit };
 });
-
+const basePath = `${import.meta.env.BASE_URL}`;
 
 const getImagePath = (nameFolder, imgName, format) => {
   const path = nameFolder
-    ? `${import.meta.env.BASE_URL}/assets/images/${nameFolder}/${imgName}.${format}`
-    : `${import.meta.env.BASE_URL}/assets/images/${imgName}.${format}`;
+    ? `${basePath}assets/images/${nameFolder}/${imgName}.${format}`
+    : `${basePath}assets/images/${imgName}.${format}`;
   return path; 
 };
 

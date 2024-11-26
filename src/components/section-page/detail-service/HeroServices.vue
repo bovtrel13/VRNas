@@ -29,6 +29,7 @@ const props = defineProps({
     type: Object,
     default: null,
   },
+  
   bgImage: {
     type: String,
     default: null,

@@ -14,7 +14,7 @@ const layout = computed(() => {
 });
 
 const currentRouteName = ref(route.name || 'Home');
-console.log(currentRouteName.value);
+
 
 watch(route, (newRoute) => {
   currentRouteName.value = newRoute.name || 'Home';

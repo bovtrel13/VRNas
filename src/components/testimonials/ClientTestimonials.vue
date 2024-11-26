@@ -7,7 +7,7 @@
     >
       <img
         class="client-img"
-        :src="'/assets/images/our_clients/' + client.imgName"
+        :src="`${basePath}assets/images/our_clients/${client.imgName}`"
         alt="image client"
       />
     </div>
@@ -33,7 +33,7 @@ const props = defineProps({
   client: { type: Object, required: true },
   showClientInfo: { type: Boolean, default: false },
 });
-
+const basePath = `${import.meta.env.BASE_URL}`;
 const emit = defineEmits(['button-clicked']);
 
 const handleClick = () => {

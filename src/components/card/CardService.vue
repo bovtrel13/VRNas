@@ -76,10 +76,10 @@ const props = defineProps({
 
 
 const imgSrc = ref(null);
-
+const basePath = `${import.meta.env.BASE_URL}`
 
 onMounted(() => {
-  imgSrc.value = `/assets/images/service_img/${props.dataCard.imgName}`;
+  imgSrc.value = `${basePath}assets/images/service_img/${props.dataCard.imgName}`;
 });
 
 

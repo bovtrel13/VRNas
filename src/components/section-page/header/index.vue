@@ -61,31 +61,26 @@ const props = defineProps({
   },
 });
 
-const activeLink = ref(false)
+
 
 watch(
   () => props.currentRouteName,
   (newRoute) => {
-    console.log(newRoute, 'header route');
     if (newRoute === 'DetailOurTeam' || newRoute === 'OurTeam') {
-      dropMenuPages.menuItems[2].attr.class = 'link-menu custom-link-active-header';
+      dropMenuPages.menuItems[2].attr.class =
+        'link-menu custom-link-active-header';
     } else {
       dropMenuPages.menuItems[2].attr.class = 'link-menu';
-      
     }
 
     if (newRoute === 'DetailService' || newRoute === 'OurService') {
-      dropMenuPages.menuItems[0].attr.class = 'link-menu custom-link-active-header';
+      dropMenuPages.menuItems[0].attr.class =
+        'link-menu custom-link-active-header';
     } else {
       dropMenuPages.menuItems[0].attr.class = 'link-menu';
     }
-
-    console.log(dropMenuPages.menuItems[2], dropMenuPages.menuItems[0]);
   }
-
 );
-
-// router-link-active
 
 const burgerOpen = ref(false);
 const handleClickBurger = () => {
@@ -158,9 +153,6 @@ const handleClickDocument = (e) => {
 
 onMounted(() => {
   document.addEventListener('click', handleClickDocument);
-
-  console.log('header mounted');
-  // console.log(currentRouteName);
 });
 
 onBeforeUnmount(() => {

@@ -40,7 +40,7 @@ const mode = markRaw({
 
 const reset = ref(0);
 
-// const activeIndexModeSelect = ref()
+
 const handleClickSelectMode = (index) => {
   totalCardsBlog.value = mode[index];
   activeIndexSelect.value = index;

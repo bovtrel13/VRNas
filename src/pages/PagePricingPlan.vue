@@ -40,7 +40,7 @@ const whyChooseUsData = markRaw(dataWhyChooseUs);
 const accordionType = 'single';
 const decorLineTitleAccordion = true;
 const playerChoose = markRaw({
-  img: '/assets/images/bg/The_Getaway_PS2.jpg',
+  img: 'assets/images/bg/The_Getaway_PS2.jpg',
   video: 'getaway.mp4',
 });
 const imageChoose = markRaw({

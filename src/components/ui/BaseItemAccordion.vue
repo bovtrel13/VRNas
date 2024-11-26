@@ -22,7 +22,7 @@
     >
       <img
         :class="{ 'btn-open': !textHidden }"
-        src="/assets/images/decor/toggle_btn.svg"
+        :src="`${basePath}assets/images/decor/toggle_btn.svg`"
         alt=""
       />
     </button>
@@ -48,6 +48,7 @@ const props = defineProps({
     required: false,
   },
 });
+const basePath = `${import.meta.env.BASE_URL}`;
 
 const emit = defineEmits(['clickBtnAccordion']);
 const handleClick = () => {

@@ -51,7 +51,7 @@ const imageOurPricing = markRaw({
   objFit: 'cover',
 });
 
-const listImgPathOurPricing = '/assets/images/decor/decor-list-service.svg';
+const listImgPathOurPricing = 'assets/images/decor/decor-list-service.svg';
 const textContentOurPricing = markRaw({
   tag_title: 'h2',
   title: 'our pricing',

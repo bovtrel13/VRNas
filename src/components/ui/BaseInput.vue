@@ -49,7 +49,7 @@ const emitInput = () => {
 };
 
 const emitKeyup = () => {
-  console.log(input.value.value);
+
   emit('keyup', input.value.value);
 }
 let fDeleteMask = null;

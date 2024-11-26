@@ -27,8 +27,9 @@ const props = defineProps({
 
 });
 
+const basePath = `${import.meta.env.BASE_URL}`;
 const getImagePath = (nameFolder, nameImg, format = '') => {
-  return `/assets/images/${nameFolder}/${nameImg}${format}`;
+  return `${basePath}assets/images/${nameFolder}/${nameImg}${format}`;
 };
 </script>
 <template>
@@ -36,7 +37,7 @@ const getImagePath = (nameFolder, nameImg, format = '') => {
     <div class="card-contact__img">
       <img
         :src="getImagePath('social', imgName)"
-        alt=""
+        alt="image"
       />
     </div>
     <div class="card-contact__info">

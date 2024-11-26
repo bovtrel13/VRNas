@@ -47,7 +47,7 @@ const linkBtnHero = markRaw({
 });
 // пропсы для мин плеера
 const playerHero = markRaw({
-  img: '/assets/images/bg/grand_theft_auto_vice_city.jpg',
+  img: 'assets/images/bg/grand_theft_auto_vice_city.jpg',
   video: 'gta_vice_city.mp4',
 });
 // Пропсы для картинки контента
@@ -95,7 +95,7 @@ const linkBtnAboutUs = markRaw({
   textLinkBtn: 'READ MORE',
 });
 const playerAboutUs = markRaw({
-  img: '/assets/images/bg/The_Getaway_PS2.jpg',
+  img: 'assets/images/bg/The_Getaway_PS2.jpg',
   video: 'getaway.mp4',
 });
 const imageAboutUs = markRaw({
@@ -121,7 +121,7 @@ const accordionWhyChooseData = markRaw(dataWhyChooseUs);
 const accordionType = 'single';
 const decorLineTitleAccordion = true;
 const playerChoose = markRaw({
-  img: '/assets/images/bg/The_Getaway_PS2.jpg',
+  img: 'assets/images/bg/The_Getaway_PS2.jpg',
   video: 'getaway.mp4',
 });
 const imageChoose = markRaw({
@@ -167,7 +167,7 @@ const textContentOurService = markRaw({
 // пропсы HomeBigPlayer, page home ================================================================================================
 
 const playerBigHome = markRaw({
-  img: '/assets/images/bg/big-player-bg.jpeg',
+  img: 'assets/images/bg/big-player-bg.jpeg',
   video: 'klip.mp4',
 });
 const textContentBigPlayerHome = markRaw({
@@ -207,7 +207,7 @@ const imageOurPricing = markRaw({
   alt: 'image user',
   objFit: 'cover',
 });
-const listImgPathOurPricing = '/assets/images/decor/decor-list-service.svg';
+const listImgPathOurPricing = 'assets/images/decor/decor-list-service.svg';
 
 const textContentOurPricing = markRaw({
   tag_title: 'h2',

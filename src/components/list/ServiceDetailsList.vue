@@ -20,9 +20,9 @@ const props = defineProps({
     default: null,
   },
 });
-
+const basePath = `${import.meta.env.BASE_URL}`;
 const setImgPath = {
-  '--imgList': `url(${props.imgPath})`,
+  '--imgList': `url(${basePath}${props.imgPath})`,
 };
 </script>
 

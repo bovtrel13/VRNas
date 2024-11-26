@@ -8,7 +8,7 @@
       >
         <img
           class="client-img"
-          :src="`/assets/images/our_clients/${nameImg}`"
+          :src="`${basePath}assets/images/our_clients/${nameImg}`"
           alt="happy client"
         />
       </div>
@@ -38,6 +38,8 @@ const props = defineProps({
     required: true,
   },
 });
+
+const basePath = `${import.meta.env.BASE_URL}`
 
 
 

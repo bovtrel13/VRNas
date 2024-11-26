@@ -364,6 +364,7 @@ onBeforeUnmount(() => {
 }
 
 .card-wrapper {
+  
   position: relative;
   max-width: 379px;
   min-height: 291px;

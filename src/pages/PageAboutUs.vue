@@ -36,7 +36,7 @@ const textContentAboutUs = markRaw({
   ],
 });
 const playerAboutUs = markRaw({
-  img: '/assets/images/bg/grand_theft_auto_vice_city.jpg',
+  img: 'assets/images/bg/grand_theft_auto_vice_city.jpg',
   video: 'gta_vice_city.mp4',
 });
 
@@ -64,7 +64,7 @@ const whyChooseUsData_2 = markRaw(dataWhyChooseUs_2);
 const accordionChooseType = 'single';
 const decorLineTitleAccordion = true;
 const playerChoose = markRaw({
-  img: '/assets/images/bg/The_Getaway_PS2.jpg',
+  img: 'assets/images/bg/The_Getaway_PS2.jpg',
   video: 'getaway.mp4',
 });
 const imageChoose = markRaw({
