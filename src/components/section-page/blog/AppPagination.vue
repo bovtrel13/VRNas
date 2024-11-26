@@ -68,6 +68,8 @@ const lengthBtn = computed(() => {
   return Math.ceil(props.cardsData.length / props.totalCards);
 });
 
+const indexActiveBtn = ref(0);
+
 const currentPage = computed(() => {
   return parseInt(route.query.page) || 1;
 });
@@ -76,12 +78,12 @@ const selectPage = ref(currentPage.value);
 
 const endPagination = computed(() => {
   const valueEnd = selectPage.value * props.totalCards;
-  console.log(valueEnd, 'valueEnd');
+
   return valueEnd > props.cardsData.length ? props.cardsData.length : valueEnd;
 });
 
 const startPagination = computed(() => {
-  console.log(currentPage.value * props.totalCards - props.totalCards, 'START');
+
   return currentPage.value * props.totalCards - props.totalCards;
 });
 
@@ -94,9 +96,12 @@ const allBtn = ref(null);
 const wrapperVisibleWidth = ref(null);
 const containerBtn = ref(null);
 
-const handleSelectPage = (page) => {
+const handleSelectPage = (page, indexBtn) => {
   selectPage.value = page;
+
   router.replace(`${props.linkCard}?page=${selectPage.value}`);
+  indexActiveBtn.value = indexBtn; 
+  console.log('indexActiveBtn',indexActiveBtn.value, lengthBtn.value);
 };
 
 
@@ -195,7 +200,7 @@ onUpdated(() => {
               startPagination <= props.cardsData.length && allBtn?.length !== 1
             "
             ref="allBtn"
-            @click="handleSelectPage(v)"
+            @click="handleSelectPage(v, index)"
             class="cards-blog__btn"
             :class="{ 'active-btn': v === selectPage }"
             v-for="(v, index) in lengthBtn"
@@ -213,7 +218,8 @@ onUpdated(() => {
           'hidden-dots':
             startPagination > cardsData.length ||
             selectPage === lengthBtn ||
-            cardsData.length / totalCards === lengthBtn,
+            cardsData.length / totalCards === lengthBtn ||
+            indexActiveBtn + visibleBtn  > lengthBtn
         }"
         class="cards-blog__dots"
         aria-hidden="true"
