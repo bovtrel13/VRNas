@@ -56,8 +56,8 @@ const setObjFit = computed(() => {
 
 const getImagePath = (nameFolder, imgName, format) => {
   const path = nameFolder
-    ? `/assets/images/${nameFolder}/${imgName}.${format}`
-    : `/assets/images/${imgName}.${format}`;
+    ? `${import.meta.env.BASE_URL}/assets/images/${nameFolder}/${imgName}.${format}`
+    : `${import.meta.env.BASE_URL}/assets/images/${imgName}.${format}`;
   return path; 
 };
 
