@@ -55,11 +55,11 @@ const textContentArticles = markRaw({
   </nav>
 
   <div class="detail-blog-container">
-    <article class="section-article">
+    <article  data-aos="fade-right" class="section-article">
       <ContentDetailBlog :dataArticle="articlesData" />
     </article>
     <aside class="section-sidebar">
-      <section class="section-recent">
+      <section data-aos="fade-down" class="section-recent">
         <ContentAside
           v-bind="imageOurArticles"
           :dataArticleRecent="articleRecentData"
@@ -67,7 +67,7 @@ const textContentArticles = markRaw({
         />
       </section>
 
-      <section class="popular-tags">
+      <section data-aos="fade-up" class="popular-tags">
         <div
           class="popular-tags__tag"
           v-for="tag in dataPopularHashtag"

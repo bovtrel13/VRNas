@@ -203,6 +203,10 @@ onBeforeUnmount(() => {
   flex-grow: 0;
   width: 100%;
   height: 100%;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
 }
 
 .content {
