@@ -164,6 +164,27 @@ const cardsBlog = [
         "sub_title": "Fun: Exploring the World of VR Entertainment",
         "imgName": "card_27_main"
     },
+    {
+        "id": 28,
+        "title": "VR Entertainment",
+        "sub_title": "Fun: Exploring the World of VR Entertainment",
+        "imgName": "card_27_main"
+    },{
+        "id": 29,
+        "title": "VR Entertainment",
+        "sub_title": "Fun: Exploring the World of VR Entertainment",
+        "imgName": "card_27_main"
+    },{
+        "id": 30,
+        "title": "VR Entertainment",
+        "sub_title": "Fun: Exploring the World of VR Entertainment",
+        "imgName": "card_27_main"
+    },{
+        "id": 31,
+        "title": "VR Entertainment",
+        "sub_title": "Fun: Exploring the World of VR Entertainment",
+        "imgName": "card_27_main"
+    },
     
 ]
 

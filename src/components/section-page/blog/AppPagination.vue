@@ -53,6 +53,8 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+
+
 });
 
 const router = useRouter();
@@ -111,6 +113,7 @@ watch(
   () => {
     router.replace(`/blog?page=1`);
     selectPage.value = 1;
+    indexActiveBtn.value = 0;
     containerBtn.value.style.transform = 'translateX(0px)';
   }
 );

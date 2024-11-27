@@ -43,7 +43,7 @@ const textContentArticles = markRaw({
         <router-link to="/">Home</router-link>
       </li>
       <li class="breadcrumb__item">
-        <router-link to="/blog">Blog</router-link>
+        <router-link to="/blog?page=1">Blog</router-link>
       </li>
       <li
         class="breadcrumb__item breadcrumb__item--active"
