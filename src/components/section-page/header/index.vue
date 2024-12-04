@@ -61,8 +61,6 @@ const props = defineProps({
   },
 });
 
-
-
 watch(
   () => props.currentRouteName,
   (newRoute) => {

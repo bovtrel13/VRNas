@@ -95,8 +95,6 @@ const slider = ref(null);
 const item = ref(null);
 const allIconsCount = ref(null);
 
-
-
 let sliderObj = null;
 let intervalId = null;
 

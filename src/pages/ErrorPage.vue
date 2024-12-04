@@ -2,7 +2,7 @@
 import { markRaw } from 'vue';
 
 const playerError = markRaw({
-  img: 'assets//images/bg/error.png',
+  img: 'assets/images/bg/error.png',
   video: 'error.mp4',
 });
 
