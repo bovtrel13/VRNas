@@ -79,7 +79,7 @@ const props = defineProps({
       </div>
       <div class="card-blog__sub-title">{{ sub_title }}</div>
       <router-link
-        v-if="link"
+        v-if="link && linkText"
         :to="link"
         class="card-blog__link"
       >
